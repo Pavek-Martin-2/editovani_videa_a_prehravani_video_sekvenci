@@ -1,0 +1,32 @@
+tady muže bejt třeba nějaká hlavička z povídánim
+=================================================
+
+00:00:00.000 00:00:10.700
+tady třeba nějaká poznamka k prvnímu času ale ne dlouha 25 znaku, tzn. kratší a nebo delší a nebo uplně prázdný řádek
+
+00:00:17.400 00:00:24.300
+pozn. scéna číslo 2 ,scena se odehrává na bla bla bla
+
+
+00:00:27.700 00:00:31.500
+poznámka 3 - také muže obsahovat, hačky čárky apod.
+
+00:00:58.300 00:01:02.800
+987342áýěááěčýáěáčýáěáčýěáčáěčýáě
+00:01:42.000 00:01:47.000
+00:01:49.500 00:01:54.700
+00:04:30.000 00:04:43.500
+
+00:06:43.000 00:06:47.000
+00:07:06.400 00:07:18.500
+00:07:30.000 00:07:36.800
+
+
+00:08:11.000 00:08:14.500
+00:08:36.200 00:08:42.600
+takže tohle vsěechno je možný a bude spracovávat jenom řádky dlouhé 25 znaku, tzn. všechny časy
+
+pro uplnost, video které by si program k tomuto textovemu souboru přidružil a keré by hledal
+by musel v tomoto připadě mít nazev "wiki_2.mp4"
+samozdřejmě by to mohl bejt třeba i duplikát puvodního videa "wiki_1.txt" a pouze přejmenovaný na "wiki_2.mp4"
+
