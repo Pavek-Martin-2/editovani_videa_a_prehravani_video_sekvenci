@@ -159,9 +159,11 @@ while (-not $stream_reader.EndOfStream) {
 $radek_seznamu = [string]($stream_reader.ReadLine())
 #echo $radek_seznamu
 
+# kontrola jesli nejde o radek komentare a pripadne preskoceni tohoto radku
 $d_radek_seznamu = $radek_seznamu.Length
-if ( $d_radek_seznamu -eq  25 ) {
-echo $radek_seznamu
+if ( $d_radek_seznamu -eq  25 ) { # pust pouze delku 25 znaku
+Write-Host -ForegroundColor Cyan $radek_seznamu
+#sleep 1
 
 
 # pocitado fragmentu souboru ( 00-99 )
@@ -203,6 +205,8 @@ $radek_mpv_11 += " --end=%" + "b" + $poc_2 + "% %file%"
 $pole_prehravani_v_mpv += $radek_mpv_11
 $pole_prehravani_v_mpv += ""
 # konec pole mpv
+
+# kontrola delky radku (jestli nejde o komentar)
 
 
 # substituce radku steameru, na jednotlive polozky ( delka radku 25 znaku )
@@ -287,7 +291,7 @@ $cas_2_celkem_vterin_2 = ((  $cas_2_h_s + $cas_2_m_s + $cas_2_s ))
 $rozdil_vterin_out += "."
 $rozdil_vterin_out += $ms
 #echo "rozdil casu je $rozdil_vterin_out vterin"
-echo "rozdil casu je $rozdil_vterin_out vterin"
+write-host -ForegroundColor Yellow "rozdil casu je $rozdil_vterin_out vterin"
 #echo $rozdil_vterin_out.GetType()
 #ffmpeg -i in.mp4 -ss 00:00:15.000 -t 00:02:55.000 -c copy out.mp4
 $out_cas = $hh + ":" + $mm + ":" + $ss
@@ -309,6 +313,7 @@ echo ""
 $pole_file_list += $radek_list
 
 } # if d_radek
+sleep 1
 } # while
 
 $stream_reader.close()
