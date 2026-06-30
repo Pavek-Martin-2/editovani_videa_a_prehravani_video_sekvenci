@@ -1,4 +1,4 @@
-https://sdilej.cz/34517600/kalhoty-od-krejciho-ze-lhoty-1988-czdab-up1024.mp4
+https://sdilej.cz/34577007/kalhoty-od-krejciho-ze-lhoty.mp4
 tohle stahnou a prejmenovat na "u_nas_v_kocourokove.mp4"
 pak pustit "run.bat" a zadat "u_nas_v_kocourokove.txt -n"
 a dojede skript tak pustit soubor "strih_u_nas_v_kocourokove.bat"
