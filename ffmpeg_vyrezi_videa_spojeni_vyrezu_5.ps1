@@ -68,11 +68,11 @@ $delka_args = $args.length
 # help
 if ($delka_args -eq 0) { #int32
 echo "help:"
-echo "pro_ffmpeg_vyrez_casu_seznam_1 text_1.txt"
+echo "ffmpeg_vyrezi_videa_spojeni_vyrezu_5.ps1 kdyz_v_Litomericich_horelo.txt"
 # bez zadneho parametru se u kzadeho videa bude ptat
-echo "pro_ffmpeg_vyrez_casu_seznam_1 text_1.txt -y"
+echo "ffmpeg_vyrezi_videa_spojeni_vyrezu_5.ps1 kdyz_v_Litomericich_horelo.txt -y"
 # prida parametr pro prepis jiz existujicich fragmentu
-echo "pro_ffmpeg_vyrez_casu_seznam_1 text_1.txt -n"
+echo "ffmpeg_vyrezi_videa_spojeni_vyrezu_5.ps1 kdyz_v_Litomericich_horelo.txt -n"
 # prida parametr ze bude preskakoat jiz existujisi
 sleep 10
 Exit 1
