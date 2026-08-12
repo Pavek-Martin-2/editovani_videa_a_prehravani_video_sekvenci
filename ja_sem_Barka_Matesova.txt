@@ -8,7 +8,6 @@ a pak to prejmenovat na "ja_sem_Barka_Matesova.mp4"
 
 https://sdilej.cz/32098894/ffmpeg-a-mpv.rar
 
-
 00:30:24.520 00:30:28.720
 scena - ja sem Barka Matesova
 
@@ -51,7 +50,7 @@ scena - diplom
 00:19:07.040 00:19:42.560
 scena - kralovna
 
-00:20:17.120 00:20:36.160
+00:20:17.120 00:20:35.760
 scena - trakar
 
 00:21:06.680 00:21:24.880
