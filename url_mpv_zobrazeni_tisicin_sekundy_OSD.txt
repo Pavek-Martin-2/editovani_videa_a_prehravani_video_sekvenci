@@ -1,0 +1,7 @@
+https://github.com/Pavek-Martin-2/mpv.conf
+
+edituje soubor mpv.conf, vypina/zapina
+zobrazovani tisicin sekundy v OSD prehravace MPV 
+a slozi to to pro vytvareni textoveho souboru z casovymi useky
+take doporucuji v "mpv" pouzivat klavesy "." a "," pro krokovani
+videa po jednom snimku dopredu a zpet
