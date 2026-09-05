@@ -340,7 +340,7 @@ echo ""
 $pole_file_list += $radek_list
 
 } # if d_radek
-sleep -Milliseconds 500
+sleep -Milliseconds 200
 } # while
 
 $stream_reader.close()
@@ -377,10 +377,10 @@ $out_file_name_bat = "strih_" +  $nazev_videa.Substring(0, $nazev_videa.Length -
 Write-Host -ForegroundColor yellow " $out_file_name_bat " -NoNewline
 
 Remove-Item -Path $out_file_name_bat -Force -ErrorAction SilentlyContinue
-sleep -Milliseconds 500
+sleep -Milliseconds 200
 
 Set-Content -Path $out_file_name_bat -Encoding ASCII -Value $pole_file_bat
-sleep -Milliseconds 500
+sleep -Milliseconds 200
 
 
 #$pole_prehravani_v_mpv
@@ -389,12 +389,12 @@ $out_file_name_play = "play_" +  $nazev_videa.Substring(0, $nazev_videa.Length -
 Write-Host -ForegroundColor red " $out_file_name_play"# -NoNewline
 
 Remove-Item -Path $out_file_name_play -Force -ErrorAction SilentlyContinue
-sleep -Milliseconds 500
+sleep -Milliseconds 200
 
 #echo $pole_prehravani_v_mpv
 $pole_prehravani_v_mpv += "pause"
 Set-Content -Path $out_file_name_play -Encoding ASCII -Value $pole_prehravani_v_mpv
-sleep -Milliseconds 500
+sleep -Milliseconds 200
 
 echo "hotovo"
 sleep 2
