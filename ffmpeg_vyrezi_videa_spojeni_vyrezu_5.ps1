@@ -340,7 +340,7 @@ echo ""
 $pole_file_list += $radek_list
 
 } # if d_radek
-sleep -Milliseconds 200
+sleep -Milliseconds 100
 } # while
 
 $stream_reader.close()
@@ -351,9 +351,9 @@ $out_file_name_list = "list_" + $nazev_videa.Substring(0, $nazev_videa.Length -4
 Write-Host -ForegroundColor cyan "$out_file_name_list " -NoNewline
 
 Remove-Item -Path $out_file_name_list -Force -ErrorAction SilentlyContinue
-sleep 1
+sleep -Milliseconds 100
 Set-Content -Path $out_file_name_list -Encoding ASCII -Value $pole_file_list
-sleep 1
+sleep -Milliseconds 100
 
 
 # zapis do souboru "bat" pro strih videa
@@ -377,10 +377,10 @@ $out_file_name_bat = "strih_" +  $nazev_videa.Substring(0, $nazev_videa.Length -
 Write-Host -ForegroundColor yellow " $out_file_name_bat " -NoNewline
 
 Remove-Item -Path $out_file_name_bat -Force -ErrorAction SilentlyContinue
-sleep -Milliseconds 200
+sleep -Milliseconds 100
 
 Set-Content -Path $out_file_name_bat -Encoding ASCII -Value $pole_file_bat
-sleep -Milliseconds 200
+sleep -Milliseconds 100
 
 
 #$pole_prehravani_v_mpv
@@ -389,13 +389,13 @@ $out_file_name_play = "play_" +  $nazev_videa.Substring(0, $nazev_videa.Length -
 Write-Host -ForegroundColor red " $out_file_name_play"# -NoNewline
 
 Remove-Item -Path $out_file_name_play -Force -ErrorAction SilentlyContinue
-sleep -Milliseconds 200
+sleep -Milliseconds 100
 
 #echo $pole_prehravani_v_mpv
 $pole_prehravani_v_mpv += "pause"
 Set-Content -Path $out_file_name_play -Encoding ASCII -Value $pole_prehravani_v_mpv
-sleep -Milliseconds 200
+sleep -Milliseconds 100
 
 echo "hotovo"
-sleep 2
+sleep -Milliseconds 500
 
